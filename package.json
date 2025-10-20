@@ -1,0 +1,35 @@
+{
+  "name": "fastify-playwright-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fastify TypeScript service with Playwright runtime",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "playwright": "^1.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.0.1",
+    "pino-pretty": "^11.2.1",
+    "prettier": "^3.2.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}
